@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Salon Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Select a date</h2>
+<input type="date" id="bookingDate">
+
+<div id="bookingModal" class="modal">
+<form id="bookingForm">
+<input name="name" placeholder="Full Name" required>
+<input name="email" type="email" placeholder="Email" required>
+<input name="phone" placeholder="Phone" required>
+<input type="text" id="selectedDate" name="booking_date" readonly>
+<select id="timeSelect" name="time"></select>
+<select id="serviceSelect" name="service"></select>
+<select id="staffSelect" name="staff"></select>
+<button>Book</button>
+</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
